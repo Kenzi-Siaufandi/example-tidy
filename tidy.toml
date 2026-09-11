@@ -1,0 +1,13 @@
+[server]
+project = "paper"
+version = "26.2"
+
+[plugins.ViaVersion]
+source = "modrinth"
+project_id = "viaversion"
+version = "5.11.0"
+
+[plugins.ViaBackwards]
+source = "modrinth"
+project_id = "viabackwards"
+version = "5.11.0"
