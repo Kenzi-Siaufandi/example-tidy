@@ -63,11 +63,11 @@ chunks:
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
   max-auto-save-chunks-per-tick: 24
-  prevent-moving-into-unloaded-chunks: false
+  prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
-  fix-climbing-bypassing-cramming-rule: false
+  fix-climbing-bypassing-cramming-rule: true
   max-entity-collisions: 8
   only-players-collide: false
 command-blocks:
@@ -75,8 +75,8 @@ command-blocks:
   permissions-level: 2
 entities:
   armor-stands:
-    do-collision-entity-lookups: true
-    tick: true
+    do-collision-entity-lookups: false
+    tick: false
   behavior:
     allow-spider-world-border-climbing: true
     baby-zombie-movement-modifier: 0.5
@@ -241,7 +241,7 @@ environment:
   max-block-ticks: 65536
   max-fluid-ticks: 65536
   nether-ceiling-void-damage-height: disabled
-  optimize-explosions: false
+  optimize-explosions: true
   portal-create-radius: 16
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
@@ -290,7 +290,7 @@ max-growth-height:
 misc:
   allow-remote-ender-dragon-respawning: false
   alternate-current-update-order: HORIZONTAL_FIRST_OUTWARD
-  disable-end-credits: false
+  disable-end-credits: true
   disable-relative-projectile-velocity: false
   disable-sprint-interruption-on-attack: false
   legacy-ender-pearl-behavior: false
