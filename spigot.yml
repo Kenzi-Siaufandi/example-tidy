@@ -31,7 +31,7 @@ settings:
   sample-count: 12
   player-shuffle: 0
   user-cache-size: 1000
-  save-user-cache-on-stop-only: false
+  save-user-cache-on-stop-only: true
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10
 world-settings:
@@ -40,14 +40,14 @@ world-settings:
     view-distance: default
     simulation-distance: default
     merge-radius:
-      item: 0.5
+      item: -1
       exp: -1
     mob-spawn-range: 8
     item-despawn-rate: 6000
-    arrow-despawn-rate: 1200
-    trident-despawn-rate: 1200
+    arrow-despawn-rate: 300
+    trident-despawn-rate: 300
     zombie-aggressive-towards-villager: true
-    nerf-spawner-mobs: false
+    nerf-spawner-mobs: true
     enable-zombie-pigmen-portal-spawns: true
     wither-spawn-sound-radius: 0
     end-portal-sound-radius: 0
@@ -102,7 +102,7 @@ world-settings:
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true
       tick-inactive-villagers: true
-      ignore-spectators: false
+      ignore-spectators: true
     entity-tracking-range:
       players: 128
       animals: 96
@@ -160,21 +160,20 @@ messages:
   outdated-server: Outdated server! I'm still on {0}
   restart: Server is restarting
 advancements:
-  disable-saving: false
+  disable-saving: true
   disabled:
-  - minecraft:story/disabled
+  - '*'
 players:
-  disable-saving: false
+  disable-saving: true
 config-version: 13
 stats:
-  disable-saving: false
+  disable-saving: true
   forced-stats: {}
 commands:
   log: true
   tab-complete: 0
-  send-namespaced: true
-  spam-exclusions:
-  - /skill
+  send-namespaced: false
+  spam-exclusions: []
   silent-commandblock-console: false
   replace-commands:
   - setblock
