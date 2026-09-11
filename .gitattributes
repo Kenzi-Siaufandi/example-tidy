@@ -1,0 +1,23 @@
+# =============================================================================
+# Git Attributes for Minecraft Config Repository
+# Ensure LF line endings for configs across Windows/Linux/Docker
+# =============================================================================
+
+# Set default behavior to normalize newlines to LF
+* text=auto eol=lf
+
+# Explicit config formats
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.properties text eol=lf
+*.toml text eol=lf
+*.conf text eol=lf
+*.txt text eol=lf
+
+# Binary files
+*.png binary
+*.jar binary
+*.db binary
+*.sqlite binary
+*.zip binary
